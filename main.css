@@ -1,351 +1,179 @@
-body{
-    height: 500vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+:root{
+    --font-titulos: 'Raleway';
+    --font-texto:  'Quicksand';
+
+    --font-width-titulo: 600;
+    --font-width-texto: 500;
+    --font-width-buttons: 600;
+
+    --card-color-azul: #1371FF;
+    --card-color-amarillo: #e4e800;
+    --card-color-verde: #00dba8;
+
+    --color-white: #ffffff;
+    --color-gris: #A7A7A7;
+    --color-verde: #74FF1F;
+    --color-azul: #1371FF;
 }
 
-/* Header */
-
-header{
-    width: 100%;
+.section-1{
+    background-color: #1B1B1B;
 }
-
-.logo{
-    position: relative;
+.section-1__header{
+    
+}
+.section-1__logo img{
     width: 10rem;
-    height: 3rem;
+}
+.section-1__options{
+    font-weight: var(--font-width-buttons);
+    font-family: var(--font-texto);
+}
+.section-1__options .nav-link{
+    color: var(--color-white);
+}
+    .section-1__link:hover{
+        color: var(--color-gris)
+    }
+
+.section-1__button{
+    border-radius: 12px;
+    border: 1px solid white;
+
+    text-shadow: 12px 12px 17px rgb(0 0 0/ 0.4);
 }
 
-.navegacion{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+    .section-1__button--registro{
+        border-color: var(--color-verde);
+    }
+    .section-1__button--registro:hover{
+        border-color: var(--color-verde);
+        background-color: var(--color-verde);
+    }
+    .section-1__button--login{
+        border-color: var(--color-azul);
+    }
+    .section-1__button--login:hover{
+        border-color: var(--color-azul);
+        background-color: var(--color-azul);
+    }
 
-.navegacion a,button{
-    margin: 5px;
-}
-
-.navegacion a{
-    text-decoration: none;
+.section-2{
     color: white;
 }
+.section-2__contain{
 
-.navegacion a p{
-    margin: 0;
-}
-
-/* ------------------- */
-
-main{
-    height: 95%;
-    width: 100%;
-}
-
-.container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-/* Estilos del enganche */
-
-.Enganche{
-    min-height: 20%;
-    background-image: url("imagenes/2.jpeg");
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.tituloEnganche{
-    text-transform: uppercase;
-    text-decoration-style: solid;
-    font-size: 10vh;
-    position: relative;
-    margin: 0 2%;
-    margin-right: 50%;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    color: white;
-}
-
-.parrafoEnganche{
-    font-size: 2vh;
-    position: relative;
-    margin: 0 2%;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    color: white;
-}
-
-/* Estilos de la prueba gratis */
-
-.PruebaGratis{
-    min-height: 20%;
-    background-image: url("imagenes/3.jpeg");
-    filter: grayscale(100%);
     background-size: cover;
+}
+.section-2__title{
+    font-size: 4.5rem;
+}
+.section-2__disco{
+    
+}
+
+.section-3{
+    background-color: rgb(90, 90, 90);
+}
+
+
+
+.section-4{
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.PruebaGratis p{
-    margin: 1% 2%;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    color: white;
-    font-size: 7vh;
-}
-
-/* Estilos de Opciones de Sonido */
-
-.OpcionesSonido{
-    min-height: 20%;
-    background-image: url("imagenes/1.png");
     background-size: cover;
+
+}
+
+
+.section-4__title{
+    position: relative; 
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: var(--color-white);
+    
+    font-size: 3rem;
+    font-weight: var(--font-width-titulo);
+}
+
+
+.card-sonido{
+    width: 100%;
+    border: 1px solid var(--card-color-azul);
+
+    background-color: rgb(0 0 0/ 0.6);
+
+}
+
+
+.card-sonido__h5{    
+    color: var(--color-white);
+
+    font-size: 1.625rem;
+    font-family: var(--font-titulos);
+    font-weight: var(--font-width-titulo);
+}
+    .card-sonido__h5--span{
+        font-size: 1.25rem;
+
+    }
+.card-sonido__p{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--color-gris);
+
+    font-size: 1rem;
+    font-family: var(--font-texto);
+    font-weight: var(--font-width-texto);
+}
+
+.card-sonido__btn{
+    border: 1px solid var(--card-color-azul);
+
+    color: var(--color-white);
+
+    font-size: 1.25rem;
+    font-family: var(--font-texto);
+    font-weight: var(--font-width-buttons);
+}
+
+.card-sonido__btn:hover{
+    color: var(--color-white);
+}
+    .card-sonido__btn--1:hover{
+        border: 1px solid var(--card-color-azul);
+        background-color: var(--card-color-azul);
+    }
+    .card-sonido__btn--2:hover{
+        border: 1px solid var(--card-color-amarillo);
+        background-color: var(--card-color-amarillo);
+    }
+    .card-sonido__btn--3:hover{
+        border: 1px solid var(--card-color-verde);
+        background-color: var(--card-color-verde);
+    }
+
+
+.border-blue{
+    border: 1px solid var(--card-color-azul);
+}
+.border-yellow{
+    border: 1px solid var(--card-color-amarillo);
+}
+.border-green{
+    border: 1px solid var(--card-color-verde);
+}
+
+.section-5{
+    position: relative;
+
     background-repeat: no-repeat;
     background-position: center;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.OpcionesSonido p{
-    text-transform: uppercase;
-    text-decoration-style: solid;
-    margin: 1% 2%;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    color: white;
-    font-size: 8vh;
-    position: relative;
-    margin-right: 50%;
-}
-
-/* Estilos de los planes */
-
-.Planes{
-    background-color: gainsboro;
-    text-transform: uppercase;
-    text-decoration-style: solid;
-    font-size: 1.2rem;
-    min-height: 22%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Planes p{
-    color: black;
-    font-size: 9vh;
-}
-
-.planesContainer{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    width: 100%;
-}
-
-.planesContainer div{
-    background-color: aliceblue;
-    flex-grow: 1;
-    margin: 2% 1%;
-    box-shadow: 3px 3px 2px 0 rgba(0,0,0,0.2);
-}
-
-/* Estilo de Quienes Somos */
-
-.QuienesSomos{
-    min-height: 18%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-}
-
-.QuienesSomos .titulo{
-    font-size: 10vh;
-    position: relative;
-    margin: 0;
-}
-
-.QuienesSomos .parrafo{
-    font-size: 2vh;
-    text-align: center;
-    margin: 0 25%;
-}
-
-/* Footer */
-
-footer{
-    height: 5%;
-    width: 100%;
-    position: relative;
-    background-color: blue;
-}
-
-/* Responsive */
-
-@media screen and (max-width: 800px) {
-    
-    body{
-        height: 200vh;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-    }
-    
-    main{
-        height: 95%;
-        width: 100%;
-    }
-    
-    .container{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-    }
-
-    /* Estilos del enganche */
-    .Enganche{
-        min-height: 20%;
-        background-image: url("imagenes/2.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: aliceblue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tituloEnganche{
-        text-transform: uppercase;
-        text-decoration-style: solid;
-        font-size: 3vh;
-        position: relative;
-        margin: 0 2%;
-        margin-right: 30%;
-    }
-
-    .parrafoEnganche{
-        position: relative;
-        margin: 0 2%;
-        font-size: 1vh;
-    }
-
-    /* Estilos de la prueba gratis */
-
-    .PruebaGratis{
-        min-height: 20%;
-        background-image: url("imagenes/3.jpeg");
-        filter: grayscale(100%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: aliceblue;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .PruebaGratis p{
-        font-size: 2vh;
-    }
-
-    /* Estilos de Opciones de Sonido */
-
-    .OpcionesSonido{
-        min-height: 20%;
-        background-image: url("imagenes/1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: aliceblue;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .OpcionesSonido p{
-        opacity: 1;
-        text-transform: uppercase;
-        text-decoration-style: solid;
-        font-size: 1.2rem;
-        position: relative;
-        margin-right: 60%;
-    }
-
-    /* Estilos de los planes */
-
-    .Planes{
-        background-color: gainsboro;
-        text-transform: uppercase;
-        text-decoration-style: solid;
-        font-size: 1.2rem;
-        min-height: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Planes p{
-        font-size: 3vh;
-    }
-
-    .planesContainer{
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        width: 100%;
-    }
-
-    .planesContainer div{
-        background-color: aliceblue;
-        flex-grow: 1;
-        margin: 2% 1%;
-        box-shadow: 3px 3px 2px 0 rgba(0,0,0,0.2);
-    }
-
-    /* Estilo de Quienes Somos */
-
-    .QuienesSomos{
-        min-height: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: grey;
-    }
-
-    .QuienesSomos .titulo{
-        font-size: 3vh;
-    }
-
-    .QuienesSomos .parrafo{
-        font-size: 1vh;
-    }
+    background-size: cover;
 }
