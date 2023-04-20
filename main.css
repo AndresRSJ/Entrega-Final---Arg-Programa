@@ -14,6 +14,7 @@
     --color-gris: #A7A7A7;
     --color-verde: #74FF1F;
     --color-azul: #1371FF;
+    --color-dark: #0d0d0d;
 }
 
 .section-1{
@@ -232,7 +233,7 @@
 }
 
 .section-5{
-    min-height: 70vh;
+    min-height: 100vh;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -252,4 +253,33 @@
     font-family: var(--font-texto);
     font-weight: var(--font-width-texto);
     
+}
+
+.section-6{
+    background-color: var(--color-dark);
+}
+.section-6__logo a img{
+    width: 10rem;
+}
+.section-6__social{
+    
+}
+.section-6__social--icon img{
+    width: 1.5rem;
+    fill: var(--color-azul)
+}
+.section-6__title{
+    font-family: var(--font-titulos);
+    font-weight: var(--font-width-titulo);
+}
+.section-6__options{
+    font-family: var(--font-texto);
+    font-weight: var(--font-width-texto);
+
+}
+.section-6__copy{
+    color: var(--color-gris);
+
+    font-family: var(--font-texto);
+    font-weight: var(--font-width-texto);
 }
