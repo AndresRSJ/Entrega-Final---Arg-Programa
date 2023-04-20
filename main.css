@@ -53,10 +53,11 @@
     }
     .section-1__button--login{
         border-color: var(--color-azul);
+        background-color: var(--card-color-azul);
     }
     .section-1__button--login:hover{
         border-color: var(--color-azul);
-        background-color: var(--color-azul);
+        background-color: transparent;
     }
 
 .section-2{
