@@ -298,10 +298,18 @@
     color: var(--color-white);
 
     opacity: 0.95;
+
+    font-family: var(--font-texto);
+    font-weight: var(--font-width-texto);
 }
 .login__logo{
-    width: 10rem;
+    width: 6rem;
+
     opacity: 0.5;
+}
+.login__h2{
+    font-family: var(--font-titulos);
+    font-weight: var(--font-width-titulo);
 }
 .login__text{
     color: var(--color-gris);
@@ -336,4 +344,46 @@
 .login__icon{
     display: inline-block;
     width: 1.5rem;
+}
+
+/*Página de registro*/
+
+.section-7{
+    min-height: 100vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.register{
+    min-width: 20rem;
+
+    background-color: var(--color-dark);
+    opacity: 0.95;
+
+    font-family: var(--font-texto);
+    font-weight: var(--font-width-texto);   
+}
+.register__logo{
+    width: 6rem;
+
+    opacity: 0.5;
+}
+.register__h2{
+    font-family: var(--font-titulos);
+    font-weight: var(--font-width-titulo);
+}
+.register__text{
+    color: var(--color-gris);
+}
+.register__btn{
+    width: 100%;
+    background-color: var(--color-azul);
+    color: var(--color-white);
+
+    font-weight: var(--font-width-buttons);
+}
+.register__btn:hover{
+    background-color: var(--color-azul);
+    box-shadow: 5px 5px 10px rgb(19 113 255/ 0.2)
 }
