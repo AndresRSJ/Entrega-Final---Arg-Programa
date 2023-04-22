@@ -69,12 +69,50 @@
     background-position: center;
     background-size: cover;
 }
+/*Sección de discos*/
 .section-2__title{
     font-size: 4.5rem;
 }
-.section-2__disco{
-    
+.disco{
+    width: 13rem;
+    max-width: 15rem;
+    background: #181818; 
+
+    color: white;
+    box-shadow: -15px -15px 30px rgba(0, 0, 0, 0.25), 15px 15px 30px rgba(12, 12, 12, 0.25);
+    border-radius: 15px;
+
+    overflow: hidden;
 }
+.disco__img--container{
+    position: relative;
+}
+.disco__img{
+    width: 100%;
+}
+.play-btn{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+
+    width: 5rem;
+}
+.disco__img--container:hover .play-btn{
+    display: block;
+}
+.btn-show{
+    display: block;
+}
+.disco__title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
 
 
 .section-3{
