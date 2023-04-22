@@ -18,7 +18,7 @@ play_btn.forEach((button, index) => {
 		} 
 		button.classList.toggle("btn-show")
 
-		if(button.classList.contains("btn-show")){
+		if(button.classList.contains("btn-show")){ //Cambiamos el ícono si está reproduciendo música o no.
 			button.setAttribute("src", "imagenes/icons/pause-button.png")
 		}else{
 			button.setAttribute("src", "imagenes/icons/play-button.png")
@@ -29,9 +29,6 @@ play_btn.forEach((button, index) => {
 
 	
 });
-
-
-//Llamada a la API
 
 const TOKENS = ["5cF0dROlMOK5uNZtivgu50", "2xVcCDRgG3TrH69TatsUxp", "6hmYi0E6EBEmDeztQHaH0C", "4nrPB8O7Y7wsOCJdgXkthe","0VjIjW4GlUZAMYd2vXMi3b"];
 /*Canciones:
@@ -49,7 +46,7 @@ function toMinutes(ms){
     return minutes.toFixed(2);
 }
 
-// Funcion que llama a la API con distintos tokens
+//Llamada a la API
 const options = {
 	method: 'GET',
 	headers: {
@@ -57,8 +54,6 @@ const options = {
 		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
 	}
 };
-
-// Función de llamada a la API, Comentada para evitar que se alcanze el límite de llamadas
 function callSongApi(token, index){
 	fetch(`https://spotify23.p.rapidapi.com/tracks/?ids=${token}`, options)
 	.then(response => response.json())
@@ -76,9 +71,11 @@ function recibeData(data, index){
 
 function callApi(cards){
 	for(let i=0; i<cards.length; i++){
-		callSongApi(cards[i].dataset.token, i);
+		callSongApi(cards[i].dataset.token, i); //Llamamos a la API con los distintos tokens de los atributos "data-token"
 	}	
 }
+
+/*Llamada a la API. Comentada para evitar llegar a al límite de llamadas*/
 
 // callApi(cards) 
 
