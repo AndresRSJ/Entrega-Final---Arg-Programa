@@ -6,6 +6,9 @@ const audio_player = document.querySelectorAll(".audio-player");
 const play_btn = document.querySelectorAll(".play-btn");
 const cards = document.querySelectorAll(".disco")
 
+const plans_btn = document.querySelectorAll(".card-sonido__btn");
+const plans_cards = document.querySelectorAll(".section-4__card");
+
 
 //Funcion de play music
 play_btn.forEach((button, index) => {
@@ -77,5 +80,4 @@ function callApi(cards){
 
 /*Llamada a la API. Comentada para evitar llegar a al límite de llamadas*/
 
-// callApi(cards) 
-
+callApi(cards) 

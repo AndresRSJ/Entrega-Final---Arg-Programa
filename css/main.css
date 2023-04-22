@@ -60,15 +60,17 @@
         background-color: transparent;
     }
 
-.section-2{
-    color: white;
-}
-.section-2__contain{
+.background{
+    min-height: 100vh;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+.section-2{
+    color: white;
+}
+
 /*Sección de discos*/
 .section-2__title{
     font-size: 4.5rem;
@@ -99,6 +101,8 @@
     margin-top: -2.5rem;
 
     width: 5rem;
+
+    cursor: pointer;
 }
 .disco__img--container:hover .play-btn{
     display: block;
@@ -113,17 +117,6 @@
 }
 
 
-
-
-.section-3{
-    background-color: rgb(90, 90, 90);
-}
-.section-3{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
 .section-3__title{
     position: relative; 
     
@@ -207,15 +200,6 @@
     border: 1px solid var(--card-color-verde);
 }
 
-
-.section-4{
-    min-height: 100vh;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-}
 .section-4__title{
     color: var(--color-white);
 
@@ -271,13 +255,6 @@
     font-family: var(--font-texto);
 }
 
-.section-5{
-    min-height: 100vh;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .section-5__title{
     color: var(--color-white);
@@ -286,12 +263,17 @@
     font-weight: var(--font-width-titulo);
 }
 .section-5__subtitle{
+    font-size: 1.8rem;
+
     color: var(--color-white);
     text-shadow: 6px 6px 9px rgb(0 0 0/ 0.6);
 
     font-family: var(--font-texto);
     font-weight: var(--font-width-texto);
     
+}
+.section-5__subtitle a{
+    text-shadow: 5px 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 .section-6{
@@ -325,12 +307,6 @@
 
 
 /*Página de Login*/
-.background{
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 .login{
     background-color: var(--color-dark);
     color: var(--color-white);
@@ -386,13 +362,6 @@
 
 /*Página de registro*/
 
-.section-7{
-    min-height: 100vh;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 .register{
     min-width: 20rem;
 
